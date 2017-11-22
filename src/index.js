@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// These must be defined for code to work in browser
 import CoordinatesButton from './components/CoordinatesButton';
 import DelayedButton from './components/DelayedButton';
 
@@ -10,5 +9,7 @@ ReactDOM.render(
     <CoordinatesButton />
     <DelayedButton />
   </div>,
-  document.getElementById('global')
+  document.getElementById('main')
 );
+
+require('./test/index-test.js'); // Leave this in!
